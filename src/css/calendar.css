@@ -1,0 +1,182 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 10px;
+  background-color: #48285b;
+}
+
+body {
+  font-family: 'Arial';
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.month {
+  max-width: 900px;
+  max-height: 880px;
+  background: linear-gradient(160deg, #f48 0%, #48285b 100%);
+  padding: 22px;
+  border-radius: 10px;
+  box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.5);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 5em;
+}
+.month .day {
+  height: 125px;
+  width: 125px;
+  background: #fff;
+  color: #000;
+  font-style: normal;
+  border-radius: 8px;
+  padding: 5px;
+  cursor: pointer;
+  justify-content: flex-start;
+  align-items: flex-start;
+  box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
+  margin-bottom: 17px;
+  font-size: 23px;
+  white-space: pre-wrap;
+  display: block;
+  line-break: normal;
+  overflow: hidden;
+  overflow-block: ellipsis;
+}
+
+button {
+  height: 44px;
+  width: 170px;
+  margin: 25px;
+  background-color: #48285b;
+  border-radius: 10px;
+  box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.5);
+  color: white;
+  align-content: center;
+  justify-content: center;
+  font-size: large;
+}
+
+span {
+  padding: 0 5px;
+}
+
+.panel {
+  background-color: lightgreen;
+  height: 44px;
+  width: 100%;
+  margin: 15px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  color: green;
+  display: none;
+}
+.edit-btn {
+  display: none;
+  height: 44px;
+  border-width: 3px;
+  border-color: white;
+}
+.submit-btn {
+  display: flex;
+  height: 44px;
+  border-width: 3px;
+  border-color: white;
+}
+.delete-btn {
+  display: flex;
+  height: 44px;
+  border-width: 3px;
+  border-color: white;
+}
+.apt {
+  white-space: pre-line;
+  border-radius: 10px;
+  width: 100%;
+  display: block;
+  word-break: break-all;
+  height: 44px;
+  font-size: 13px;
+  padding: 5px;
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.edit-btn:hover {
+  background-color: #f48;
+}
+.submit-btn:hover {
+  background-color: #f48;
+}
+.delete-btn:hover {
+  background-color: #f48;
+}
+.date {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.todayDate {
+  padding-left: 25px;
+  font-size: 25px;
+  align-items: center;
+  display: flex;
+}
+.thisMonth {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.edit-text {
+  background-color: lightblue;
+  height: 44px;
+  width: 100%;
+  margin: 15px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  color: blue;
+  display: none;
+}
+select {
+  height: 44px;
+  width: 66px;
+  font-size: 22px;
+  margin-left: 25px;
+}
+select:hover {
+  background-color: lightblue;
+  cursor: pointer;
+}
+
+h2 {
+  color: WHITE;
+}
+h1 {
+  color: WHITE;
+}

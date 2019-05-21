@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en" data-framework="javascript">
+
+<head>
+  <meta charset="utf-8">
+  <title>Calendar App</title>
+  <link rel="stylesheet" href="css/calendar.css">
+</head>
+
+<body>
+  <container class="container">
+    <div class="board">
+      <header class='thisMonth'>
+        <h1>Calendar - </h1>
+        <h1 class="todayDate"></h1>
+      </header>
+      <section class="score-panel row">
+        <div class="panel">
+          <h3>There is already an appointment for this date!</h3>
+        </div>
+        <div class="edit-text">
+          <h3>Please edit your appointment and click 'Save' button.</h3>
+        </div>
+
+        <form id='form'>
+          <div class='date'>
+            <h2>Pick a day and type your appointment below:</h2><br>
+            <select class="mySelect">
+            </select>
+          </div>
+
+
+          <input class='apt' type="text" name="firstname"><br>
+          <div class='buttons'>
+            <button class="submit-btn" type="button" onclick='saveApt()' value='Schedule'>Schedule</button>
+            <button class="edit-btn" type="button" onclick='editApt()' value='Edit'>Save</button>
+            <button class="delete-btn" type="button" onclick='deleteApt()' value='Delete'>Delete</button>
+            <h2>Click on a scheduled appointment to edit:</h2>
+          </div>
+        </form>
+      </section>
+    </div>
+  </container>
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+  <script language="javascript" type="text/javascript" src="js/calendar.js"></script>
+</body>
+
+</html>
