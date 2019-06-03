@@ -23,37 +23,36 @@ window.onload = function() {
 
   if (
     currentMonth === 'January' ||
-    'March' ||
-    'May' ||
-    'July' ||
-    'August' ||
-    'October' ||
-    'December'
+    currentMonth === 'March' ||
+    currentMonth === 'May' ||
+    currentMonth === 'July' ||
+    currentMonth === 'August' ||
+    currentMonth === 'October' ||
+    currentMonth === 'December'
   ) {
     var days = 31
-  }
-  if (currentMonth === 'February') {
+  } else if (currentMonth === 'February') {
     var days = 28
   } else {
     var days = 30
   }
 
   month = []
-  for (var i = 0; i < days + 1; i++) {
+  for (var i = 0; i < days; i++) {
     month.push(i + 1)
   }
 
-  for (var i = 0; i < days + 1; i++) {
-    $('.mySelect').append(`<option>${i + 1}</option>`)
+  for (var i = 0; i < days; i++) {
+    $('.mySelect').append(`<option>${i}</option>`)
   }
 
   $('.board').append('<ul class="month"></ul>')
-  for (var i = 0; i < days + 1; i++) {
+  for (var i = 0; i < days; i++) {
     $('.month').prepend('<li class="day"></li>')
   }
 
   $('.day').prepend('<i></i>')
-  for (var i = 0; i < days + 1; i++) {
+  for (var i = 0; i < days; i++) {
     $('.day')
       .eq(i)
       .find('i')
