@@ -1,4 +1,4 @@
-# calendar-js-challenge
+# Front End Calendar - using Javascript/JQuery
 
 Create a calendar for a job interview challenge
 
